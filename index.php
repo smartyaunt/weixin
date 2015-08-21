@@ -5,7 +5,7 @@
 $signature = $_GET["signature"];
 $timestamp = $_GET["timestamp"];
 $nonce = $_GET["nonce"];	
-    		
+file_put_contents('a.txt', 'data');  		
 $token = '199008yybcb';
 $tmpArr = array($token, $timestamp, $nonce);
 sort($tmpArr, SORT_STRING);
