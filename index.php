@@ -1,10 +1,10 @@
 <?php
 
-
+define('TOKEN', '199008yyb');
 function checkSignature() {
-        $signature = $_GET["signature"];
-        $timestamp = $_GET["timestamp"];
-        $nonce = $_GET["nonce"];	
+    $signature = $_GET["signature"];
+    $timestamp = $_GET["timestamp"];
+    $nonce = $_GET["nonce"];	
         		
 	$token = TOKEN;
 	$tmpArr = array($token, $timestamp, $nonce);
